@@ -1,0 +1,425 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-family: helvetica, sans-serif;
+}
+
+.container{
+	max-width: 1200px;
+	padding: 0 10px; /* m0-10 */
+	margin: 0 auto; /* m0-a */
+}
+
+/*---------  BLOCKS  ---------*/
+
+.block{
+	padding: 60px 0;
+}
+
+	.block--secondary{
+		background-color: #e3e3e3;
+	}
+
+
+/*---------  HEADER  ---------*/
+
+.header{
+	color: #fff;
+	border-top: solid 30px #000;
+	background-image: url("../images/background.jpg");
+	background-size: cover;
+	padding: 170px 0;
+}
+
+	.header__content{
+		padding-left: 120px;
+	}
+
+	.header__logo{
+		font-size: 50px;
+	}
+
+/*---------  STORES  ---------*/
+
+.stores{
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+	.stores__item{
+		margin-right: 15px;
+	}
+	
+	.stores__link{
+		width: 53px;
+		height: 53px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		background-color: rgba(0,0,0,0.7);
+		text-decoration: none;
+		color: rgba(255, 255, 255, 0.45);
+		font-size: 20px;
+		transition:  border-radius 0.4s;
+	}
+
+		.stores__link:hover{
+			background-color: #2ecc71;
+			color: #fff;
+			border-radius: 0;		
+		}
+
+/*---------  FEATURES  ---------*/
+.features__1{
+	text-align: center;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.features{
+	text-align: center;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	position: relative;
+
+
+}
+	.features__item{
+		width: 350px;
+	}
+
+	.features__item1{
+		width: 550px;
+	}
+
+
+.servicios{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: #d2d2d2;
+	border: solid 20px;
+	border-color: #f6b65d;
+
+
+}
+
+.servicios:hover {
+		opacity: 0.2;
+		transition: opacity 0.5s;
+	}
+
+	.features__icon{
+		width: 98px;
+		height: 98px;
+		display: inline-flex;
+		border-radius: 50%;
+		background-color: #2ecc71;
+		color: #fff;
+		font-size: 50px;
+		justify-content: center;
+		align-items: center;
+	}	
+
+
+
+
+/*---------  SFORM  ---------*/
+
+.sform{
+	display: flex;
+}
+	.sform__field,
+	.sform__btn{
+		padding: 10px;
+		border: none;
+	}
+
+	.sform__field{
+		border-radius: 8px 0 0 8px;
+	}
+
+	.sform__btn{
+		border-radius: 0 8px 8px 0;
+		background-color: #2ecc71;
+		color: #fff;
+		cursor: pointer;
+	}
+
+/*---------  MEDIA QUERIES  ---------*/
+@media screen and ( max-width: 1024px){
+	.features__item{
+		width: 47%;
+		margin-left: 1.5%;
+		margin-right: 1.5%;
+		margin-bottom: 30px;
+	}
+
+		.works__image{
+			width: 100%;
+		}
+
+
+}
+
+/*---------  fin de@mediaqueres   ---------*/
+@media screen and ( max-width: 767px){
+
+	.header{
+		padding: 50px 0;
+	}	
+	
+	.header__content{
+		padding-left: 0;
+		text-align: center;
+	}
+
+	.stores{
+		display: inline-flex;
+	}
+
+	.features{
+
+		display: block;
+		
+	}
+	.features__item{
+		width: auto;
+		
+	}
+
+}
+/*---------  textos   ---------*/
+.subtitulos{
+	text-align: center;
+	font-size: 30px;
+
+}
+	.subtitulos__blanco{
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+
+
+}
+
+.texto{
+	text-align: center;
+	letter-spacing: 1px;
+
+
+}
+
+.texto__blanco{
+	text-align: center;
+	color: #fff;
+
+}
+.texto__blanco__1{
+	text-align: center;
+	color: #fff;
+	font-family: 'Syncopate', sans-serif
+}
+
+.galeria{
+	width: 100%;
+	background-color: #000;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	padding: 50PX;
+	text-align: center;
+}
+
+.cform__btn{
+		border: none;
+		background-color: #f6b65d;
+		color: #000;
+		padding: 10px 20px;
+		font-size: 20px;
+		border-radius: 5px;
+		text-transform: uppercase;
+		box-shadow: 1px 1px 1px #000;
+		margin: 15px auto;
+		display: block;
+		cursor: pointer;
+		margin-bottom: 50px;
+
+	}
+		.cform__btn:hover{
+			background-color: #f6b65d;
+			opacity: 0.5;
+			transition: opacity 0.5s;
+		}
+
+
+.cform{
+	width: 600px;
+	margin: 30px auto;
+}
+	.cform__field{
+		margin: 15px;
+		width: 270px;
+		padding: 10px;
+		border: none;
+		display: inline-block;
+		background-color: #d2d2d2;
+		font-family: inherit;
+		transition: background-color .8s;
+	}
+		.cform__field:focus{
+			background-color: #f6b65d;
+		}
+		.cform__field--textarea{
+			width: 570px;
+			height: 80px;
+		}
+
+
+.block{
+	padding: 60px 0;
+}
+
+	.block--secondary1{
+		background-color: #d2d2d2;
+	}
+
+.socials-list{
+	text-align: center;
+	padding: 0;
+}
+
+	.socials-list__item{
+		display: inline-block;
+		margin: 0 10px;
+	}
+
+	.socials-list__link{
+		display: block;
+		width: 40px;
+		height: 40px;
+		background-color: #d2d2d2;
+		color: #000;
+		font-size: 25px;
+		text-decoration: none;
+		line-height: 40px;
+		border-radius: 50%;
+		border: solid 3px #000;	
+	}
+
+		.socials-list__link:hover{
+			background-color: #d2d2d2;
+			opacity: 0.3;
+			transition: opacity 0.5s;
+		}
+
+
+.listado__fotos{
+	max-width: 100%;
+	padding: 0 10px; /* m0-10 */
+	margin: 0 auto; /* m0-a */
+	text-align: center;
+}
+
+.fotos{
+	width: 200px;
+	height: 200px;
+	margin-bottom: -20px;
+
+}
+
+.lista__fotos{
+	list-style: none;
+	display: inline-block;
+
+}
+
+.cols{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 25px;
+	margin-bottom: 25px;
+
+
+}
+
+.gallery__image{
+	display: block;
+
+}
+	.gallery__image:hover{
+		opacity: 0.2;
+		transition: opacity 0.5s;
+	}
+
+.circulo{
+	border-radius: 50%;
+	padding-top: 130px;
+	padding-bottom: 130px;
+	border: solid 20px;
+	font-size: 50px;
+	border-color: #f6b65d;
+	color: #000;
+	font-family: 'Syncopate', sans-serif
+}
+
+h1{
+	font-family: 'Syncopate', sans-serif
+	
+
+}
+
+h2{
+	font-family: 'Syncopate', sans-serif
+
+}
+
+h3{
+	font-family: 'Syncopate', sans-serif
+
+}
+
+p{
+	letter-spacing: 0.5px;
+}
+
+.stores{
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+	.stores__item{
+		margin-right: 20px;
+
+	}
+	
+	.stores__link{
+		width: 60px;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		background-color: rgba(0,0,0,0.7);
+		text-decoration: none;
+		color: rgba(255, 255, 255, 0.45);
+		font-size: 30px;
+		transition:  border-radius 0.4s;
+	}
+
+		.stores__link:hover{
+			background-color: #f6b65d;
+			color: #000;
+			border-radius: 0;		
+}
